@@ -1,0 +1,21 @@
+102235061	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Exit;H.1;;;A;;;kwh;Flow
+102235063	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Exit;D.1;;;Renom;;;kwh;Last Nomination
+102235064	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Entry;D.1;;;Renom;;;kwh;Last Nomination
+102235065	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Entry;H.1;;;A;;;kwh;Flow
+103638479	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Entry;D.1;;;Nom;;;kwh;First Nomination
+103638480	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Entry;D.1;;;alloc;prelim;;kwh;Preliminary Allocation
+103638482	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Exit;D.1;;;Nom;;;kwh;First Nomination
+103638483	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Exit;D.1;;;alloc;prelim;;kwh;Preliminary Allocation
+103638800	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Entry;D.1;;;alloc;;;kwh;Final Allocation
+103638805	Eon.GasTransport.New;OGE;H.1;CET;DEU;BorderPoint|Wallbach|Exit;D.1;;;alloc;;;kwh;Final Allocation
+111506081	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;DEU;CHE;Wallbach;21X000000001133M;kWh;;NOM;Day Ahead Nominations;Wallbach
+111506084	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;CHE;DEU;Wallbach;21X000000001133M;kWh;;Alloc;Allocations;Wallbach
+111506092	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;DEU;CHE;Wallbach;21X000000001133M;kWh/m3;;A;wobbe;Wallbach
+111506096	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;DEU;CHE;Wallbach;21X000000001133M;kWh;;NOM;Final Nominations;Wallbach
+111506099	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;CHE;DEU;Wallbach;21X000000001133M;kWh;;NOM;Final Nominations;Wallbach
+111506101	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;DEU;CHE;Wallbach;21X000000001133M;kWh;;Alloc;Allocations;Wallbach
+111506102	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;CHE;DEU;Wallbach;21X000000001133M;kWh;;NOM;Day Ahead Nominations;Wallbach
+111506110	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;DEU;CHE;Wallbach;21X000000001133M;kWh/m3;Gross;A;Measured GCV;Wallbach
+111506113	FluxysDE.EXC;CH4;21X0000000012388;EXC;DEU;CET;D.1;H.1;DEU;CHE;Wallbach;21X000000001133M;kWh;;A;Physical Flow;Wallbach
+End of File
+An extra line added

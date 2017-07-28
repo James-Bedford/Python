@@ -14,6 +14,10 @@ else:
 print (suppliers.keys())
 print(suppliers)
 
-
+#to print out a dictionary line by line
 for suppliers_name in suppliers:
     print(suppliers_name,suppliers[suppliers_name])
+
+print(suppliers['TTF'])
+del(suppliers['TTF'])
+print (suppliers)

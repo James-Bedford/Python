@@ -1,0 +1,1 @@
+Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;Initial Catalog=PointConnect;Data Source=FOTDAL02PR;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=GMT08781;Use Encryption for Data=False;Tag with column collation when possible=False
