@@ -72,8 +72,31 @@ my_Input_File = os.path.join(path,"hello.txt")
 with open(my_Input_File,"r")as file_reader:
     for n in file_reader.readlines():
         print(n)
+import os
+import shutil, os
+#images file contains a number of different files formats and a set of sub folders
+#program finds files and copies formats to crrect subdirectories
 
-
+image_Path = "C:/Users/jbedford/Gazprom/Win_Python/WinPython-64bit-3.5.3.1Qt5/notebooks/work/Refresh/images/"
+tiff_Path = "C:/Users/jbedford/Gazprom/Win_Python/WinPython-64bit-3.5.3.1Qt5/notebooks/work/Refresh/images/tiff/"
+jpeg_Path = "C:/Users/jbedford/Gazprom/Win_Python/WinPython-64bit-3.5.3.1Qt5/notebooks/work/Refresh/images/jpeg/"
+png_Path = "C:/Users/jbedford/Gazprom/Win_Python/WinPython-64bit-3.5.3.1Qt5/notebooks/work/Refresh/images/png"
+#get list of images
+file_Name_List = os.listdir(image_Path)
+new_Name = "test_File.txt"
+#loop over the files
+for n in file_Name_List:
+    if n.lower().endswith(".tif"):
+        #How large is the file?
+        file_Size = os.path.getsize(image_Path+n)
+        
+        print("File {0} is {1} bytes long".format(n,file_Size))
+        #need a method to copy/move
+        #shutil.copy(image_Path+n,jpeg_Path)5
+        #shutil.move(image_Path+n,jpeg_Path)
+        #now rename and chnage file type
+        #shutil.copy(image_Path+n,image_Path+new_Name)
+        #Delete file
+        #os.unlink(image_Path+new_Name)
 
         
-    
