@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from random import randint
 
 board = []
@@ -44,7 +43,7 @@ for turn in range(4):
             print ("Game Over")
         print ("Turn " +str(turn)), turn +1
         print_board(board)
-=======
+#=======
 from random import randint
 
 board = []
@@ -90,4 +89,4 @@ for turn in range(4):
             print ("Game Over")
         print ("Turn " +str(turn)), turn +1
         print_board(board)
->>>>>>> origin/master
+#>>>>>>> origin/master
