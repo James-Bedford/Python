@@ -3,13 +3,19 @@
 import sqlite3
 import os
 import csv
-conn = sqlite3.connect('city.db')
 
-#file_Path = 'C:/Tools/Python_Refresh/Python_Flask/Python_Flask/sqlite/SQL/'
 file_Path = 'C:\Tools\Python_Refresh\Python_Flask\Python_Flask\sqllite\SQL'
-with open(os.path.join(file_Path,"city.csv"),"r")as file_Read:
-    file_Reader = csv.reader(file_Read)
-    next(file_Reader)  # add this to miss first line - I.e Header.
-    for n in file_Reader:
-        print(n)
-        
+with sqlite3.connect('new.db')as connection:
+    c = connection.cursor()
+    #open csv file and assign to  a variable
+    try:
+
+        cameras = csv.reader(open('C:\Tools\Python_Refresh\Python_Flask\Python_Flask\sqllite\SQL\camera.csv'))
+        c.execute('CREATE Table Camera(cameraid,ip,location)')
+        c.executemany('INSERT INTO Camera(cameraid,ip,location) VALUES(?,?,?)',cameras)
+        c.execute('SELECT cameraid,ip,location from camera')
+        rows = c.fetchall()
+        for r in rows:
+            print(r[0],r[1],r[2])
+    except sqlite3.OperationalError:
+        print('Error has occured')
