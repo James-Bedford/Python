@@ -11,9 +11,11 @@ with sqlite3.connect('new.db')as connection:
     try:
 
         cameras = csv.reader(open('C:\Tools\Python_Refresh\Python_Flask\Python_Flask\sqllite\SQL\camera.csv'))
-        c.execute('CREATE Table Camera(cameraid,ip,location)')
+        #c.execute('CREATE Table Camera(cameraid,ip,location)')
         c.executemany('INSERT INTO Camera(cameraid,ip,location) VALUES(?,?,?)',cameras)
         c.execute('SELECT cameraid,ip,location from camera')
+       # c.execute("UPDATE camera SET location = 'Book Store' WHERE cameraid = '2'")
+        #c.execute("DELETE FROM Camera WHERE cameraid = '2'")
         rows = c.fetchall()
         for r in rows:
             print(r[0],r[1],r[2])
